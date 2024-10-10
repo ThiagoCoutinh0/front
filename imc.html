@@ -50,7 +50,7 @@
 
     const imc = weight / (height * height);
 
-    fetch(`https://10.100.64.103:5000/Receita/${imc}`)
+    fetch(`http://10.100.64.103:5000/Receita/${imc}`)
     .then(response => {
         if (!response.ok) {
           throw new Error('Erro na requisição');
